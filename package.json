@@ -1,0 +1,37 @@
+{
+  "name": "ultimate_explorer",
+  "version": "1.0.0",
+  "description": "An ultimate file explorer with custom extensions and tags",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder"
+  },
+  "build": {
+    "appId": "com.hadihub.ultimate_explorer",
+    "productName": "Ultimate Explorer",
+    "files": [
+      "**/*",
+      "icon.ico"
+    ],
+    "directories": {
+      "buildResources": "assets"
+    },
+    "win": {
+      "icon": "icon.ico",
+      "target": "nsis"
+    }
+  },
+  "keywords": [],
+  "author": "ItsDaBoSs",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "electron-packager": "^17.1.2",
+    "open": "^10.1.0"
+  },
+  "devDependencies": {
+    "electron": "^31.3.1",
+    "electron-builder": "^24.13.3"
+  }
+}
